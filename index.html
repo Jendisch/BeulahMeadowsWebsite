@@ -568,41 +568,28 @@
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
 					<center>
-						<form class="contact-form" id="gform" method="POST" 
-						action="https://script.google.com/macros/s/AKfycbwXxlNiaRNz_fc47eBQbpgYpnbEM_NFXJEuNr2T654WC1xEhFc/exec">
-
-							<!-- <fieldset>
-								<label for="name">Name: </label>
-								<input id="name" name="name" placeholder="What your Mom calls you" />
-							</fieldset>
-							<br>
-
-							<fieldset class="pure-group">
-								<label for="email">
-									<em>Your</em> Email Address:</label>
-								<input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
-								<span id="email-invalid" style="display:none">
-									Must be a valid email address</span>
-							</fieldset>
-							<br>
-
-							<fieldset class="pure-group">
-								<label for="message">Message: </label>
-								<textarea id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
-							</fieldset>
-							<br>
-
-							<button class="button-success pure-button button-xlarge">
-								<i class="fa fa-paper-plane"></i>&nbsp;Send</button> -->
-
-
+						<form class="contact-form" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwXxlNiaRNz_fc47eBQbpgYpnbEM_NFXJEuNr2T654WC1xEhFc/exec">
 							<input type="text" class="input" name="name" placeholder="Name">
-						<input type="email" class="input" name="email" placeholder="Email">
-						<input type="text" name="subject" class="input" placeholder="Subject">
-						<textarea class="input" name="message" placeholder="Message"></textarea>
-						<button class="main-btn">Send message</button>
+							<input type="email" class="input" name="email" placeholder="Email">
+							<input type="text" class="input" name="subject" placeholder="Subject">
+							<textarea class="input" name="message" placeholder="Message"></textarea>
+							<button class="main-btn">Send message</button>
 					</center>
 					</form>
+
+					<!-- Customize the Thankyou Message People See when they submit the form: -->
+					<div style="display:none;" id="thankyou_message">
+						<h3>
+							<center>
+								<em>Thanks</em> for contacting us! We will get back to you soon!
+							</center>
+						</h3>
+					</div>
+
+					<!-- Submit the Form to Google Using AJAX -->
+					<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+
 				</div>
 				<!-- /contact form -->
 
