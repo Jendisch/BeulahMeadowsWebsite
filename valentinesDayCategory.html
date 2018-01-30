@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Beulah Meadows Designs</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheets -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/gallery.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+
+	<style>
+		body {
+			background-color: darkgrey
+		}
+	</style>
+
+	<noscript>
+		<style>
+			.es-carousel ul {
+				display: block;
+			}
+		</style>
+	</noscript>
+
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+				<div class="rg-image-nav">
+					<a href="#" class="rg-image-nav-prev">Previous Image</a>
+					<a href="#" class="rg-image-nav-next">Next Image</a>
+				</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+			<div class="rg-caption-wrapper">
+				<div class="rg-caption" style="display:none;">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+
+</head>
+
+<body>
+	<!-- Nav -->
+	<nav id="nav" class="navbar nav-transparent">
+		<div class="container">
+
+			<div class="navbar-header">
+				<!-- Logo -->
+				<div class="navbar-brand">
+					<a href="index.html">
+						<img class="logo" src="img/logo.png" alt="logo">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Collapse nav button -->
+				<div class="nav-collapse">
+					<span></span>
+				</div>
+				<!-- /Collapse nav button -->
+			</div>
+
+			<!--  Main navigation  -->
+			<ul class="main-nav nav navbar-nav navbar-right">
+				<li>
+					<a href="./index.html">Return to Homepage</a>
+				</li>
+			</ul>
+			<!-- /Main navigation -->
+
+		</div>
+	</nav>
+	<br>
+	<!-- /Nav -->
+
+	<!-- Container -->
+	<div class="container-fluid">
+
+		<!-- Row -->
+		<div class="row">
+			<!-- Section-header -->
+			<div class="section-header text-center">
+				<h2 class="title">Valentine's Day</h2>
+			</div>
+			<!-- /Section-header -->
+		</div>
+		<!-- /Row -->
+
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="row">
+					<div class="column">
+						<img src="./img/work1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./img/work2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./img/work3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="column">
+						<img src="./img/work4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+				</div>
+
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()" data-dismiss="myModal">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="./img/work1.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="./img/work2.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="./img/work3.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="./img/work4.jpg" style="width:100%">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+
+						<div class="column">
+							<img class="demo cursor" src="work1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="work2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="work3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="work4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+
+	</div>
+	<!-- /Container -->
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2018. All Rights Reserved
+						</p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+
+</body>
+
+</html>
