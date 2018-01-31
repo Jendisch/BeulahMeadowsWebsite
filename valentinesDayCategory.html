@@ -9,6 +9,7 @@
 
 	<title>Beulah Meadows Designs</title>
 
+	<!-- Favicons -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 	<!-- Google font -->
@@ -27,8 +28,9 @@
 
 	<!-- Custom stlylesheets -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<link type="text/css" rel="stylesheet" href="css/gallery.css" />
 
+	<!-- Gallery stylesheets -->
+	<link type="text/css" rel="stylesheet" href="css/gallery.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
@@ -47,6 +49,7 @@
 		</style>
 	</noscript>
 
+	<!-- Gallery jquery wrapper -->
 	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
 		<div class="rg-image-wrapper">
 			{{if itemsCount > 1}}
@@ -114,145 +117,109 @@
 		</div>
 		<!-- /Row -->
 
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<div class="row">
-					<div class="column">
-						<img src="./img/work1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-					</div>
-					<div class="column">
-						<img src="./img/work2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-					</div>
-					<div class="column">
-						<img src="./img/work3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-					</div>
-					<div class="column">
-						<img src="./img/work4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		<!-- Row -->
+		<div class="row">
+			<div class="container">
+				<div class="content">
+					<div id="rg-gallery" class="rg-gallery">
+						<div class="rg-thumbs">
+							<!-- Elastislide Carousel Thumbnail Viewer -->
+							<div class="es-carousel-wrapper">
+								<div class="es-nav">
+									<span class="es-nav-prev">Previous</span>
+									<span class="es-nav-next">Next</span>
+								</div>
+								<div class="es-carousel">
+									<ul>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/1.jpg" data-large="gallery/valentinesGallery/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/2.jpg" data-large="gallery/valentinesGallery/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/3.jpg" data-large="gallery/valentinesGallery/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/4.jpg" data-large="gallery/valentinesGallery/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/5.jpg" data-large="gallery/valentinesGallery/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/6.jpg" data-large="gallery/valentinesGallery/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/7.jpg" data-large="gallery/valentinesGallery/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/8.jpg" data-large="gallery/valentinesGallery/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/9.jpg" data-large="gallery/valentinesGallery/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/10.jpg" data-large="gallery/valentinesGallery/10.jpg" alt="image10" data-description="Which fortified her visage from the sun"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/11.jpg" data-large="gallery/valentinesGallery/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="gallery/valentinesGallery/thumbs/12.jpg" data-large="gallery/valentinesGallery/12.jpg" alt="image12" data-description="The carcass of beauty spent and done"
+												/>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End Elastislide Carousel Thumbnail Viewer -->
+						</div>
+						<!-- rg-thumbs -->
 					</div>
 				</div>
-
-				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()" data-dismiss="myModal">&times;</span>
-					<div class="modal-content">
-
-						<div class="mySlides">
-							<div class="numbertext">1 / 4</div>
-							<img src="./img/work1.jpg" style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">2 / 4</div>
-							<img src="./img/work2.jpg" style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">3 / 4</div>
-							<img src="./img/work3.jpg" style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">4 / 4</div>
-							<img src="./img/work4.jpg" style="width:100%">
-						</div>
-
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-						<div class="caption-container">
-							<p id="caption"></p>
-						</div>
-
-
-						<div class="column">
-							<img class="demo cursor" src="work1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-						</div>
-						<div class="column">
-							<img class="demo cursor" src="work2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-						</div>
-						<div class="column">
-							<img class="demo cursor" src="work3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-						</div>
-						<div class="column">
-							<img class="demo cursor" src="work4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-						</div>
-					</div>
-				</div>
+				<!-- content -->
 
 			</div>
-			<!-- /Row -->
-
 		</div>
+		<br>
+		<!-- /Row -->
 
 	</div>
 	<!-- /Container -->
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-
-
-
 
 	<!-- Footer -->
 	<footer id="footer" class="sm-padding bg-dark">
@@ -268,13 +235,13 @@
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li>
-							<a href="#">
+							<a href="https://www.facebook.com/BeulahMeadowsDesigns/" target="_blank">
 								<i class="fa fa-facebook"></i>
 							</a>
 						</li>
 						<li>
 							<li>
-								<a href="#">
+								<a href="https://www.instagram.com/beulahmeadows62/" target="_blank">
 									<i class="fa fa-instagram"></i>
 								</a>
 							</li>
@@ -283,7 +250,8 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2018. All Rights Reserved
+						<p>Copyright © 2018.
+							<i>Jennifer Marie Websites</i> All Rights Reserved.
 						</p>
 					</div>
 					<!-- /footer copyright -->
@@ -317,10 +285,13 @@
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
 
 </body>
 

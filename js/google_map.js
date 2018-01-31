@@ -1,5 +1,5 @@
 function initMap() {
-	var myLatLng = { lat: 43.010946, lng: -88.230444 };
+	var myLatLng = { lat: 43.015066, lng: -88.695052 };
 
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 9,
@@ -18,6 +18,7 @@ function initMap() {
 	ltlng.push(new google.maps.LatLng(43.311, -88.173));
 	ltlng.push(new google.maps.LatLng(42.929, -88.115));
 	ltlng.push(new google.maps.LatLng(42.654, -88.406));
+	ltlng.push(new google.maps.LatLng(43.002, -89.532));
 
 	var title = [];
 
@@ -31,6 +32,7 @@ function initMap() {
 	title.push("Lamm Gardens");
 	title.push("The Gingerbread House");
 	title.push("Northwind Perennial Farm");
+	title.push("JNJ Craftworks");
 
 	var address = [];
 
@@ -94,6 +96,12 @@ function initMap() {
 		'<div id="bodyContent">' + '<p>Northwind Perennial Farm </p>' +
 		'<p>7047 Hospital Road </p>' +
 		'<p>Burlington, WI 53105 </p>' + '</div>' + '</div>');
+	address.push('<div id="content">' +
+		'<div id="siteNotice">' + '</div>' +
+		'<h3 id="firstHeading" class="firstHeading">JNJ Craftworks</h3>' +
+		'<div id="bodyContent">' + '<p>JNJ Craftworks </p>' +
+		'<p>1051 N Edge Trail </p>' +
+		'<p>Verona, WI 53593 </p>' + '</div>' + '</div>');
 
 
 	var marker0 = new google.maps.Marker({
@@ -215,6 +223,18 @@ function initMap() {
 	marker9.addListener('click', function () {
 		infowindow9.open(map, marker9);
 	});
+
+	var marker10 = new google.maps.Marker({
+		position: ltlng[10],
+		map: map,
+		title: title[10]
+	});
+	var infowindow10 = new google.maps.InfoWindow({
+		content: address[10]
+	});
+	marker10.addListener('click', function () {
+		infowindow10.open(map, marker10);
+	});
 }
 
 function hideAllInfoWindows(map) {
@@ -228,4 +248,5 @@ function hideAllInfoWindows(map) {
    marker7.infowindow7.close(map, marker7);
    marker8.infowindow8.close(map, marker8);
    marker9.infowindow9.close(map, marker9);
+   marker10.infowindow10.close(map, marker10);
  }

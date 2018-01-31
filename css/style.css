@@ -105,7 +105,14 @@ a:hover, a:focus {
 .grey-text {
     color: rgb(158, 152, 152);
     text-shadow: 3px 3px #050000;
-    font-family: serif;
+    font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+    font-size: 5em;
+}
+
+.grey-text-cursive {
+    color: rgb(158, 152, 152);
+    text-shadow: 3px 3px #050000;
+    font-family: cursive;
 }
 
 ::-moz-selection {
